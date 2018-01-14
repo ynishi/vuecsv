@@ -1,7 +1,7 @@
-import HelloWorld from './components/HelloWorld.vue'
+import CsvDownload from './components/CsvDownload.vue'
 
 function plugin (Vue) {
-  Vue.component(HelloWorld.name, HelloWorld)
+  Vue.component(CsvDownload.name, CsvDownload)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -12,6 +12,6 @@ export default plugin
 const version = '__VERSION__'
 
 export {
-  HelloWorld,
+  CsvDownload,
   version
 }
