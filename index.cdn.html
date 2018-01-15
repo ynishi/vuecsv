@@ -8,13 +8,17 @@
   </head>
   <body>
     <div id="app">
-      <csv-download></csv-download>
+      <csv-download :title="title" :data-json="d"></csv-download>
     </div>
   </body>
   <script type=text/javascript>
     Vue.component("csv-download", VueCSV.CsvDownload)
     new Vue({
-      el:"#app"
+      el:"#app",
+      data: {
+        title: 'download csv',
+        d: [{'a':1,'b':2},{'a':3,'b':4}]
+      }
     })
   </script>
 </html>
