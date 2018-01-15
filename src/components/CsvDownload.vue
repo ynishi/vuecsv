@@ -10,15 +10,26 @@ import * as FS from 'file-saver'
 
 export default {
   name: 'CsvDownload',
-  beforeMound () {
+  props: {
+    title: {
+      type: String,
+      default: 'Download'
+    },
+    filename: {
+      type: String,
+      default: 'download.csv'
+    },
+    convOption: {
+      type: Object,
+      default: {}
+    },
+    dataJson: {
+      type: Array
+    }
   },
   data () {
     return {
-      title: 'Download',
-      dataJson: [],
-      dataCSV: '',
-      filename: 'download.csv',
-      convOption: {}
+      dataCSV: ''
     }
   },
   methods: {
@@ -32,7 +43,7 @@ export default {
         return
       }
       const bom = new Uint8Array([0xEF, 0xBB, 0xBF])
-      const blob = new Blob([bom, this.csvCSV], {type: 'text/csv;charset=utf-8'})
+      const blob = new Blob([bom, this.dataCSV], {type: 'text/csv;charset=utf-8'})
       FS.saveAs(blob, this.filename)
     }
   }
