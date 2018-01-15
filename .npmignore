@@ -1,0 +1,14 @@
+build/
+config/
+static/
+src/
+test/
+node_modules/
+/.babelrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.postcssrc.js
+/package-lock.json
+/yarn.lock
+/.env

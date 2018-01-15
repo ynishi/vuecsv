@@ -1,9 +1,17 @@
 # vuecsv
 
 * CSV components for Vue.js
+
+## Use
+
 * sample is in index.cdn.html
 ```
 npm run buildcdn && open dist/index.cdn.html
+```
+* CDN
+```
+https://unpkg.com/vuecsv/dist/static/js/app.cdn.js
+https://unpkg.com/vuecsv/dist/static/css/app.cdn.js
 ```
 
 ## Build Setup
