@@ -10,8 +10,8 @@ npm run buildcdn && open dist/index.cdn.html
 ```
 * CDN
 ```
-https://unpkg.com/vuecsv/dist/static/js/app.cdn.js
-https://unpkg.com/vuecsv/dist/static/css/app.cdn.js
+<link rel="stylesheet" href="https://unpkg.com/vuecsv/dist/static/css/app.cdn.css">
+<script type="text/javascript" src="https://unpkg.com/vuecsv/dist/static/js/app.cdn.js"></script>
 ```
 
 ## Build Setup
