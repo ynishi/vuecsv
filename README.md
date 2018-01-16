@@ -29,9 +29,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-# build for production support browser 
-npm run buildcdn
-
 # run unit tests
 npm run unit
 
