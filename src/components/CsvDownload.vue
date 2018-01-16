@@ -42,8 +42,7 @@ export default {
         alert('no data')
         return
       }
-      const bom = new Uint8Array([0xEF, 0xBB, 0xBF])
-      const blob = new Blob([bom, this.dataCSV], {type: 'text/csv;charset=utf-8'})
+      const blob = new Blob([this.dataCSV], {type: 'text/csv;charset=utf-8'})
       FS.saveAs(blob, this.filename)
     }
   }
