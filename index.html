@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>vuecsv</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+      <csv-download :title="title" :data-json="d"></csv-download>
+    </div>
   </body>
+  <script type=text/javascript>
+    Vue.component("csv-download", VueCSV.CsvDownload)
+    new Vue({
+      el:"#app",
+      data: {
+        title: 'download csv',
+        d: [{'a':1,'b':2},{'a':3,'b':4}]
+      }
+    })
+  </script>
 </html>
