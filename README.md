@@ -14,6 +14,23 @@ npm run buildcdn && open dist/index.cdn.html
 <script type="text/javascript" src="https://unpkg.com/vuecsv/dist/vuecsv.min.js"></script>
 ```
 
+## Methods
+
+| name | desc |
+|:---|:---|:---|
+| convert | convert Json(with/without header) to CSV |
+| download | download converted data |
+
+## Properties
+
+| name | desc | default |
+|:---|:---|:---|
+| title | Button title | Download |
+| filename | Downloaded filename | download.csv |
+| convOption | convert Json to CSV options(compatible papaparse) | undefined |
+| header | header string of CSV(string map) | undefined |
+| dataJson | contents of CSV(array, compatible papaparse) | undefined |
+
 ## Build Setup
 
 ``` bash
@@ -41,4 +58,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## LICENSE
 
 * This code is released under the MIT License, see LICENSE.
-* (C)2018 Yutaka Nishimura 
+* (C)2018 Yutaka Nishimura
