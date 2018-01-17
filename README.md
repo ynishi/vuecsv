@@ -17,7 +17,7 @@ npm run buildcdn && open dist/index.cdn.html
 ## Methods
 
 | name | desc |
-|:---|:---|:---|
+|:---|:---|
 | convert | convert Json(with/without header) to CSV |
 | download | download converted data |
 
