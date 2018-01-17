@@ -20,8 +20,10 @@ export default {
       default: 'download.csv'
     },
     convOption: {
-      type: Object,
-      default: {}
+      type: Object
+    },
+    header: {
+      type: Object
     },
     dataJson: {
       type: Array
@@ -34,7 +36,23 @@ export default {
   },
   methods: {
     convert () {
-      this.dataCSV = Papa.unparse(this.dataJson, this.convOption)
+      if (typeof this.header === 'undefined' || this.header === '') {
+        this.dataCSV = Papa.unparse(this.dataJson, this.convOption)
+      } else {
+        var d = {
+          fields: Object.values(this.header),
+          data: []
+        }
+        for (let i = 0; i < this.dataJson.length; i++) {
+          var a = []
+          for (let key in this.header) {
+            var o = this.dataJson[i]
+            a.push(o[key])
+          }
+          d.data.push(a)
+        }
+        this.dataCSV = Papa.unparse(d, this.convOption)
+      }
     },
     download () {
       this.convert()
