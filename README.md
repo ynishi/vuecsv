@@ -2,6 +2,11 @@
 
 * CSV components for Vue.js
 
+## Demo
+
+* see jsfiddle
+* https://jsfiddle.net/ynishif/1ztu8x8q/
+
 ## Use
 
 * sample is in index.cdn.html
@@ -26,8 +31,8 @@ npm run buildcdn && open dist/index.cdn.html
 | name | desc | default |
 |:---|:---|:---|
 | title | Button title | Download |
-| filename | Downloaded filename | download.csv |
-| convOption | convert Json to CSV options(compatible papaparse) | undefined |
+| filename | Downloaded filename | download |
+| options | convert and download options(compatible papaparse) | default papaparse |
 | header | header string of CSV(string map) | undefined |
 | dataJson | contents of CSV(array, compatible papaparse) | undefined |
 
@@ -54,6 +59,23 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## CONTRIBUTING
+
+* Welcome to contribute!
+
+### Start
+
+* At first, make issue to start discuss, new feature, bug, support, or about any type of activity. 
+
+### develop
+
+* fork repository.
+* clone repository.
+* build as above.
+* coding.
+* push your repository.
+* make pull request with issue No.
 
 ## LICENSE
 
