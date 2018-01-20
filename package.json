@@ -1,6 +1,6 @@
 {
   "name": "vuecsv",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CSV components for Vue.js",
   "homepage": "https://github.com/ynishi/vuecsv",
   "repository": {
@@ -21,6 +21,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "bootstrap-vue": "^1.4.1",
     "file-saver": "^1.3.3",
     "papaparse": "^4.3.6",
     "testdouble": "^3.3.1",
