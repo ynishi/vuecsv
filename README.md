@@ -12,8 +12,13 @@
 
 * sample is in index.cdn.html
 ```
-npm run buildcdn && open dist/index.cdn.html
+npm run build && open dist/index.html
 ```
+* yarn
+```
+yarn && open dist/index.html
+```
+
 * CDN
 ```
 <link rel="stylesheet" href="https://unpkg.com/vuecsv/dist/vuecsv.min.css">
