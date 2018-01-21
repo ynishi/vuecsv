@@ -1,4 +1,5 @@
 # vuecsv
+[![Build Status](https://travis-ci.org/ynishi/vuecsv.svg?branch=master)](https://travis-ci.org/ynishi/vuecsv)
 
 * CSV components for Vue.js
 
